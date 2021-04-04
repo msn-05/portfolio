@@ -1,0 +1,145 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth!important;
+}
+body{
+  background-color: lightgrey;
+  font-family: 'Poppins', sans-serif;
+}
+.cont{
+  width: 90%;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 30px;
+}
+.intro{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.intro p{
+  font-size: 13pt;
+  color: dimgrey;
+}
+.picture{
+  flex: 33%;
+  max-width: 33%;
+}
+.picture img{
+  width: 100%;
+  border-radius: 20px;
+}
+.infos{
+  flex: 60%;
+  max-width: 60%;
+}
+.info1{
+  display: flex;
+  justify-content: space-between;
+}
+.skills{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.skills div{
+  flex: 100%;
+  max-width: 100%;
+}
+.skills > div > div{
+  display: flex;
+  width: 100%;
+  padding: 10px 5px;
+}
+#col1 p, #col2 p{
+  flex:30%;
+  max-width: 30%;
+  font-size: 13pt;
+  margin-top: -5px;
+}
+progress[value]{
+  appearance: none;
+  flex: 65%;
+  max-width: 65%;
+}
+progress[value]::-webkit-progress-bar{
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+progress[value]::-webkit-progress-value{
+  border-radius: 10px;
+  background: dodgerblue;
+  transition: width 2s;
+}
+.tags{
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: none;
+  outline: none!important;
+  font-size: 13pt;
+  font-family: inherit;
+  text-decoration: none;
+  color: black;
+}
+.active{
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+}
+.project{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.project-img{
+  flex:40%;
+  max-width: 40%;
+}
+.project-img img{
+  width: 100%;
+  box-shadow: 1px 1px 3px lightgrey,-1px -1px 3px lightgrey;
+  border-radius: 10px;
+}
+.info{
+  flex:55%;
+  max-width: 55%;
+}
+.info p{
+  color: grey;
+  font-size: 14pt;
+}
+.demo, .code{
+  text-decoration: none;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.demo{
+  color: white!important;
+  background-color: dodgerblue;
+}
+@media screen and (max-width:600px){
+  .intro, .info1{
+    flex-direction: column;
+  }
+  .picture, .infos{
+    flex:100%;
+    max-width: 100%;
+  }
+  .skills{
+    flex-direction: column;
+  }
+  .project{
+    flex-direction: column;
+    align-items: space-around;
+  }
+  .project-img, .info{
+    flex: 100%;
+    max-width: 100%;
+  }
+}

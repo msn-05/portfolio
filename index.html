@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5"/>
+    <link rel="icon" href="photos/devchallenges.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Portfolio Site</title>
+  </head>
+  <body>
+    <div class="cont intro">
+      <div class="picture">
+        <img src="photos/picture.jpg" alt="Profile Picture"/>
+      </div>
+      <div class="infos">
+        <div class="info1">
+          <div><br>
+            <h2>Saadman Nuheen</h2>
+            <p>Front-end developer</p>
+          </div>
+          <div style="margin-top: 5px;font-size: 13pt"><br>
+            <span class="fas fa-envelope"></span> saadmannuheen@email.com<br>
+            <span class="fas fa-phone-alt"></span> 01 23 45 67 89
+          </div>
+        </div>
+        <br><br>
+        <div>
+          <p>Self-motivated developer, who is willing to learn and create outstanding UI applications.</p>
+          <br>
+          <p>Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cont" style="padding: 20px">
+      <h1>FRONT END</h1><br>
+      <div class="skills">
+        <div id="col1">
+          <div>
+            <p>Html</p><progress max="100" value="0"></progress>
+          </div>
+          <div>
+            <p>Css</p><progress max="100" value="0"></progress>
+          </div>
+          <div>
+            <p>Javascript</p><progress max="100" value="0"></progress>
+          </div>
+        </div>
+        <div id="col2">
+          <div>
+            <p>React</p><progress max="100" value="0"></progress>
+          </div>
+          <div>
+            <p>Vue</p><progress max="100" value="0"></progress>
+          </div>
+          <div>
+            <p>Redux</p><progress max="100" value="0"></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cont" style="padding:20px">
+      <h1>Projects</h1>
+      <br>
+      <a href="javascript:void(0);" onclick="filter('all',this)" class="tags">All</a>
+      <a href="javascript:void(0);" onclick="filter('javascript',this)" class="tags">Javascript</a>
+      <a href="javascript:void(0);" onclick="filter('responsive',this)" class="tags">Responsive</a>
+    </div>
+    <div class="cont project" data-tags="all,responsive">
+      <div class="project-img">
+        <img src="photos/projects/checkout-page.jpg">
+      </div>
+      <div class="info">
+        <p>#responsive</p>
+        <br>
+        <h1>Checkout Page</h1>
+        <br>
+        <p>Learnt a lot new stuff about HTML Forms while making this project</p>
+        <br>
+        <a class="demo" href="https://checkout-page-by-msn.netlify.app">Demo</a>
+        <a class="code" href="https://github.com/msn-05/checkout-page">Code</a>
+      </div>
+    </div>
+    <div class="cont project" data-tags="all,responsive">
+      <div class="project-img">
+        <img src="photos/projects/edie-homepage.jpg">
+      </div>
+      <div class="info">
+        <p>#responsive</p>
+        <br>
+        <h1>Edie Homepage</h1>
+        <br>
+        <p>This project took me a while to make</p>
+        <br>
+        <a class="demo" href="https://edie-homepage-by-msn.netlify.app">Demo</a>
+        <a class="code" href="https://github.com/msn-05/edie-homepage">Code</a>
+      </div>
+    </div>
+    <div class="cont project" data-tags="all,responsive">
+      <div class="project-img">
+        <img src="photos/projects/interior-consultant.jpg">
+      </div>
+      <div class="info">
+        <p>#responsive</p>
+        <br>
+        <h1>Interior Consultant</h1>
+        <br>
+        <p>Learnt flexbox while making this project</p>
+        <br>
+        <a class="demo" href="https://interior-consultant-demo.netlify.app">Demo</a>
+        <a class="code" href="https://github.com/msn-05/interior-consultant">Code</a>
+      </div>
+    </div>
+    <div class="cont project" data-tags="all,responsive">
+      <div class="project-img">
+        <img src="photos/projects/recipe-page.jpg">
+      </div>
+      <div class="info">
+        <p>#responsive</p>
+        <br>
+        <h1>Recipe Page</h1>
+        <br>
+        <p>Learnt <a href="https://animate.style">animate.css</a> while making this project</p>
+        <br>
+        <a class="demo" href="https://recipe-page-by-msn.netlify.app">Demo</a>
+        <a class="code" href="https://github.com/msn-05/recipe-page">Code</a>
+      </div>
+    </div>
+    <div class="cont project" data-tags="all,,javascript">
+      <div class="project-img">
+        <img src="photos/projects/stopthebomb.jpg">
+      </div>
+      <div class="info">
+        <p>#javascript</p>
+        <br>
+        <h1>Stop the bomb</h1>
+        <br>
+        <p>Small and fun game I made in Sololearn. It's simple!You just have to stop the bomb!</p>
+        <br>
+        <a class="demo" href="https://stopthebomb.netlify.app">Demo</a>
+        <a class="code" href="https://github.com/msn-05/disarm_the_bomb">Code</a>
+      </div>
+    </div>
+    <div class="cont project" data-tags="all,javascript">
+      <div class="project-img">
+        <img src="photos/projects/breakout.jpg">
+      </div>
+      <div class="info">
+        <p>#javascript</p>
+        <br>
+        <h1>Breakout Game</h1>
+        <br>
+        <p>My first HTML game made in Sololearn.</p>
+        <br>
+        <a class="demo" href="https://breakoutmobile.netlify.app">Demo</a>
+        <a class="code" href="https://github.com/msn-05/break-out-game-mobile">Code</a>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
