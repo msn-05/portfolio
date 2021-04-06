@@ -84,6 +84,7 @@ progress[value]::-webkit-progress-value{
   font-family: inherit;
   text-decoration: none;
   color: black;
+  transition: all .5s linear;
 }
 .active{
   background-color: dodgerblue;

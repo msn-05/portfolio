@@ -19,7 +19,7 @@ function filter(txt,button){
   for (let el of projects){
     let tags = el.dataset.tags.split(',');
     if (tags.includes(txt)){
-      el.style.display = "block";
+      el.style.display = "flex";
     }
     else{
       el.style.display = "none";
