@@ -7,7 +7,9 @@ window.onload = () => {
   }
   let a = document.querySelectorAll('a');
   for (let e of a){
-    e.target = "_blank";
+    if (!e.classList.contains('tags')){
+      e.target = "_blank";
+    }
   }
 };
 function filter(txt,button){
